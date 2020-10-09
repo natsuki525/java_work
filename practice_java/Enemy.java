@@ -1,4 +1,5 @@
 import java.util.*;
+// 抽象クラスなのでEnemyをnewできない。
 abstract class Enemy{
   public Enemy(){
     r = new Random(System.currentTimeMillis());

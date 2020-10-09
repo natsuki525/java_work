@@ -1,14 +1,15 @@
 class Bob extends Enemy{
+  // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§å‹æ•—ã®ãƒã‚¤ãƒ³ãƒˆã‚’ç”Ÿæˆ
   public Bob(){
     this.winPoint = 5;
     this.losePoint = 2;
-    this.name = "ƒ{ƒu";
+    this.name = "ãƒœãƒ–";
   }
   public boolean Battle(){
     boolean result = false;
     while(true){
       int bobNum = this.r.nextInt(3);
-      System.out.print("ƒ{ƒuu‚¶‚á[‚ñ‚¯[‚ñIv(1:ƒO[ 2:ƒ`ƒ‡ƒL 3:ƒp[)F");
+      System.out.print("ãƒœãƒ–ã€Œã˜ã‚ƒãƒ¼ã‚“ã‘ãƒ¼ã‚“ï¼ã€(1:ã‚°ãƒ¼ 2:ãƒãƒ§ã‚­ 3:ãƒ‘ãƒ¼):");
       String line = this.sc.nextLine();
       if(line.equals("1")){
         if(bobNum != 0){
@@ -28,7 +29,7 @@ class Bob extends Enemy{
       }else{
         continue;
       }
-      System.out.println("‚ ‚¢‚±II");
+      System.out.println("ã‚ã„ã“!!");
     }
     return result;
   }

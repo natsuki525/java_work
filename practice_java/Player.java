@@ -6,7 +6,8 @@ class Player{
   private int winCount;
   public Player(){
     Scanner sc = new Scanner(System.in);
-    System.out.print("‚ ‚È‚½‚Ì–¼‘O‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+    System.out.print("ã‚ãªãŸã®åå‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
+    // ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®ç”Ÿæˆã¨ã¨ã‚‚ã«åå‰ã®å…¥åŠ›ã‚‚ã§ãã‚‹ã‚ˆã†ã«ãªã£ã¦ã„ã‚‹ã€‚
     this.name = sc.nextLine();
     this.point = 10;
     this.enemyCount = 0;
@@ -26,9 +27,9 @@ class Player{
   }
   public void ShowStatus(){
     System.out.println("");
-    System.out.println("–¼‘OF" + this.name);
-    System.out.println("ƒ|ƒCƒ“ƒgF" + String.valueOf(this.point));
-    System.out.println("Ÿ‚Á‚½”F" + String.valueOf(this.winCount) + " / " + String.valueOf(this.enemyCount));
+    System.out.println("åå‰" + this.name);
+    System.out.println("ãƒã‚¤ãƒ³ãƒˆ" + String.valueOf(this.point));
+    System.out.println("å‹ã£ãŸæ•°" + String.valueOf(this.winCount) + " / " + String.valueOf(this.enemyCount));
     System.out.println("");
   }
 

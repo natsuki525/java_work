@@ -2,20 +2,20 @@ class Mary extends Enemy{
   public Mary(){
     this.winPoint = 3;
     this.losePoint = 9;
-    this.name = "ƒƒAƒŠ[";
+    this.name = "ãƒ¡ã‚¢ãƒªãƒ¼";
   }
   public boolean Battle(){
     boolean result = false;
     int loseNum = this.r.nextInt(5);
-    System.out.print("ƒƒAƒŠ[u1`5‚Ì‚¤‚¿AŠO‚ê‚Í‚P‚Â‚í‚æv(1`5‚ğ“ü—Í)F");
+    System.out.print("ãƒ¡ã‚¢ãƒªãƒ¼ã€Œ1ã€œ5ã®ã†ã¡ã€å¤–ã‚Œã¯ï¼‘ã¤ã‚ã‚ˆã€(1ã€œ5ã‚’å…¥åŠ›)ï¼š");
     while(true){
       String line = this.sc.nextLine();
       int userNum = 0;
-      //”’lƒ`ƒFƒbƒN
+      //ï¿½ï¿½ï¿½lï¿½`ï¿½Fï¿½bï¿½N
       try {
     		userNum = Integer.parseInt(line);
         if(userNum >= 1 && userNum <= 5){
-          System.out.println("ŠO‚ê‚Í" + String.valueOf(loseNum + 1));
+          System.out.println("å¤–ã‚Œã¯" + String.valueOf(loseNum + 1));
           if(loseNum + 1 != userNum){
             result = true;
           }
@@ -24,7 +24,7 @@ class Mary extends Enemy{
     	} catch (Exception ex) {
 
     	}
-      System.out.print("1`5‚Ì”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢BF");
+      System.out.print("1ã€œ5ã®æ•°å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚ï¼š");
     }
     return result;
   }

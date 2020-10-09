@@ -2,10 +2,10 @@ class Yamada extends Enemy{
   public Yamada(){
     this.winPoint = 0;
     this.losePoint = 25;
-    this.name = "R“c";
+    this.name = "å±±ç”°";
   }
   public boolean Battle(){
-    System.out.print("R“c‚Íƒ‹[ƒ‹‚ğ–³‹‚µ‚Ä‰£‚è‚©‚©‚Á‚Ä‚«‚½II");
+    System.out.print("å±±ç”°ã¯ãƒ«ãƒ¼ãƒ«ã‚’ç„¡è¦–ã—ã¦æ®´ã‚Šã‹ã‹ã£ã¦ããŸï¼ï¼");
     this.sc.nextLine();
     return false;
   }
